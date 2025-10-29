@@ -1,65 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ATP Finals</title>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ATP Finals Torino 2025</title>
 
-    <!-- Bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
-      integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb"
-      crossorigin="anonymous"
-    >
+  <!-- META -->
+  <meta name="description" content="Sito informativo sulle ATP Finals Torino 2025: programma, giocatori, curiosità e informazioni utili.">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/f/f7/ATP_Tour_logo.svg">
 
-    <!-- File CSS esterno -->
-    <link rel="stylesheet" href="style.css">
-  </head>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css.css">
+</head>
 
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Home</a>
-        <a class="navbar-brand" href="#">Storia</a>
-        <a class="navbar-brand" href="#">Evento</a>
-        <a class="navbar-brand" href="#">Regolamento</a>
-      </div>
-    </nav>
-
-    <!-- Banner -->
-    <div class="banner">
-      <img src="https://www.torinoclick.it/wp-content/uploads/Sinner-FInals-2024-prima-partita-1.jpg" alt="ATP Finals Banner">
-      <div class="banner-content">
-        ATP Finals
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="brand">ATP Finals 2025</div>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <div class="menu">
+        <a href="#luogo">Luogo</a>
+        <a href="#programma">Programma</a>
+        <a href="#biglietti">Biglietti</a>
+        <a href="#giocatori">Giocatori</a>
+        <a href="#curiosita">Curiosità</a>
       </div>
     </div>
+  </nav>
 
-    <!-- Cards -->
-    <div class="container my-5">
-      <div class="row text-center">
-        <!-- Card esempio -->
-        <div class="col-md-4 mb-4">
-          <div class="card shadow">
-            <img src="https://www.sporteimpianti.it/wp-content/uploads/2021/11/ATP-web-copertina.jpg" class="card-img-top" alt="Campo da tennis">
-            <div class="card-body">
-              <h5 class="card-title">Storia del torneo</h5>
-              <p class="card-text">Scopri come sono nate le ATP Finals e perché sono così importanti.</p>
-              <a href="#" target="_blank" class="btn btn-success">Leggi</a>
-            </div>
-          </div>
+  <!-- BANNER -->
+  <header class="banner">
+    <img src="https://www.torinoclick.it/wp-content/uploads/Sinner-FInals-2024-prima-partita-1.jpg" alt="ATP Finals Banner">
+    <div class="banner-content">Nitto ATP Finals 2025 – Torino</div>
+  </header>
+
+  <!-- SEZIONE LUOGO -->
+  <section id="luogo" class="section">
+    <div class="container">
+      <h2>📍 Luogo dell'evento</h2>
+      <p>Le <strong>Nitto ATP Finals 2025</strong> si terranno dal <strong>9 al 16 novembre</strong> all’<b>Inalpi Arena</b> (ex Pala Alpitour) di Torino, in Piemonte.</p>
+      <p>Superficie: duro indoor – uno dei campi più veloci del circuito.</p>
+      <img src="https://github.com/nickfinesso/Lavoro-di-gruppo/blob/main/cr_foto-21-pala_alpitour_145.jpg?raw=true" alt="Inalpi Arena Torino" class="responsive-img">
+    </div>
+  </section>
+
+  <!-- SEZIONE PROGRAMMA -->
+  <section id="programma" class="section bg-light">
+    <div class="container">
+      <h2>🗓️ Programma generale</h2>
+      <ul>
+        <li>9–14 novembre: Fase a gironi (pomeriggio e serale)</li>
+        <li>15 novembre: Semifinali (pomeriggio e serale)</li>
+        <li>16 novembre: Finali (ore 15:00 singolare – ore 18:00 doppio)</li>
+      </ul>
+      <p>Tutti gli incontri si giocano in sessioni pomeridiane e serali per permettere al pubblico di seguire più match nella stessa giornata.</p>
+    </div>
+  </section>
+
+  <!-- SEZIONE BIGLIETTI -->
+  <section id="biglietti" class="section">
+    <div class="container">
+      <h2>🎟️ Biglietti e Info Utili</h2>
+      <p>I biglietti ufficiali sono disponibili sul sito <a href="https://www.nittoatpfinals.com" target="_blank">nittoatpfinals.com</a>.</p>
+      <p><b>Come arrivare:</b></p>
+      <ul>
+        <li>🚇 <b>Metro:</b> fermata Spezia (linea 1)</li>
+        <li>🚌 <b>Bus GTT:</b> linee 4, 10, 17, 91</li>
+        <li>🚗 <b>Auto:</b> parcheggi in zona Stadio Olimpico</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SEZIONE GIOCATORI -->
+  <section id="giocatori" class="section bg-light">
+    <div class="container">
+      <h2>🎾 Giocatori da tenere d'occhio</h2>
+      <p>Gli otto migliori tennisti del 2025 si sfideranno per chiudere la stagione da campione. Tra i favoriti:</p>
+      <div class="players">
+        <div class="player">
+          <img src="https://github.com/nickfinesso/Lavoro-di-gruppo/blob/main/Jannik_Sinner_(2024_US_Open)_04.jpg?raw=true" alt="Jannik Sinner">
+          <p><b>Jannik Sinner</b> 🇮🇹 – Campione 2024</p>
+        </div>
+        <div class="player">
+          <img src="https://github.com/nickfinesso/Lavoro-di-gruppo/blob/main/16895328749101.jpg?raw=true" alt="Carlos Alcaraz">
+          <p><b>Carlos Alcaraz</b> 🇪🇸 – Numero 2 del mondo</p>
+        </div>
+        <div class="player">
+          <img src="https://github.com/nickfinesso/Lavoro-di-gruppo/blob/main/Stefanos-Tsitsipas-2338743.jpg?raw=true" alt="Stefanos Tsitsipas">
+          <p><b>Stefanos Tsitsipas</b> 🇬🇷 – Ex finalista ATP Finals</p>
         </div>
       </div>
     </div>
+  </section>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- SEZIONE CURIOSITÀ -->
+  <section id="curiosita" class="section">
+    <div class="container">
+      <h2>💡 Curiosità</h2>
+      <ul>
+        <li>È la <b>56ª edizione</b> del torneo in singolare.</li>
+        <li>Torino ospita le Finals per la <b>5ª volta consecutiva</b>.</li>
+        <li>Un giocatore imbattuto può guadagnare fino a <b>1.500 punti ATP</b>.</li>
+        <li>Ogni partita del round robin è al meglio dei 3 set.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 ATP Finals Torino – Sito informativo a scopo didattico</p>
+      <p>Niccolò Finesso - Matteo Gravina - Alessandro Zanussi</p>
+    </div>
+  </footer>
+
+  <!-- TORNA SU -->
+  <a href="#" class="back-to-top" title="Torna su">↑</a>
+</body>
 </html>
+
+
