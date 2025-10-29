@@ -1,62 +1,210 @@
-      body, .navbar, .card, .banner {
-        font-family: 'Permanent Marker', cursive;
-      }
+/* RESET BASE */
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
+  scroll-behavior: smooth;
+}
 
-      .navbar .container-fluid {
-        display: flex;
-        justify-content: flex-start;
-      }
+/* CONTAINER GENERICO */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
-      .navbar .navbar-brand {
-        margin-right: 15px;
-      }
+/* NAVBAR */
+.navbar {
+  background: #111;
+  color: white;
+  padding: 10px 0;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand {
+  font-weight: bold;
+  color: white;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.3em;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+.menu a:hover {
+  color: #1db954;
+}
 
-      .banner {
-        position: relative;
-        width: 100%;
-        height: 300px;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-      }
+/* MENU MOBILE */
+.menu-icon {
+  display: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+#menu-toggle {
+  display: none;
+}
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    text-align: center;
+  }
+  #menu-toggle:checked + .menu-icon + .menu {
+    display: flex;
+  }
+  .menu a {
+    padding: 10px 0;
+    border-top: 1px solid #333;
+  }
+  .menu-icon {
+    display: block;
+  }
+}
 
-      .banner img {
-        width: 100%;
-        height: 500px;
-        object-fit: cover;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 0;
-      }
+/* BANNER */
+.banner {
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+.banner img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.2rem;
+  font-family: 'Permanent Marker', cursive;
+  text-shadow: 2px 2px 4px #000;
+}
 
-      .banner::after {
-        content: "";
-        position: absolute;
-        top: 0; left: 0;
-        width: 100%; height: 100%;
-        z-index: 1;
-      }
+/* SEZIONI */
+.section {
+  padding: 40px 0;
+}
+.bg-light {
+  background: #f9f9f9;
+}
+h2 {
+  color: #111;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 2px solid #1db954;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+p, li {
+  margin-bottom: 10px;
+}
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+a {
+  color: #1db954;
+}
 
-      .banner-content {
-        position: relative;
-        z-index: 2;
-        font-size: 2.5rem;
-        color: white;
-        text-shadow: 2px 2px 5px black;
-      }
+/* IMMAGINI GENERALI */
+.responsive-img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+}
 
-      .card {
-        transition: transform 0.2s;
-        box-shadow: 0 4px 8px;
-      }
+/* GIOCATORI */
+.players {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.player {
+  width: 25%;
+  text-align: center;
+}
+.player img {
+  width: 70%;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+.player img:hover {
+  transform: scale(1.05);
+}
+.player p {
+  margin-top: 10px;
+  font-size: 0.95em;
+}
+@media (max-width: 768px) {
+  .player {
+    width: 80%;
+  }
+  .player img {
+    width: 60%;
+  }
+}
 
-      .card:hover {
-        transform: scale(1.05);
-      }
+/* FOOTER */
+.footer {
+  background: #111;
+  color: #ddd;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+.footer a {
+  color: #1db954;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
 
-      .btn-success {
-        font-family: 'Permanent Marker', cursive;
-      }
+/* TORNA SU */
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #1db954;
+  color: white;
+  font-size: 26px;
+  text-decoration: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+.back-to-top:hover {
+  background: #0f7a38;
+  transform: scale(1.1);
+}
+@media (max-width: 600px) {
+  .back-to-top {
+    width: 42px;
+    height: 42px;
+    font-size: 22px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
